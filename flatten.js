@@ -20,7 +20,6 @@ const flatten = function(arr) {
     // eslint-disable-next-line max-len
     !Array.isArray(arr[i]) ? flattened.push(arr[i]) : arr[i].map( (e) => flattened.push(e));
   }
-  console.log(flattened);
   return flattened;
 };
 
