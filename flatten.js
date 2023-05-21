@@ -15,13 +15,6 @@ const assertArraysEqual = function(arr1, arr2) {
 };
 
 const flatten = function(arr) {
-  // crear una variable llamada flattened
-  // recorred cada elemento de arr
-    // checar si es un array
-      // si no, flattened.push(e)
-      //si sí recorrer su contenido y empujar cada elemento a flattened
-      // regresar flattened
-
   const flattened = [];
   for (let i = 0; i < arr.length; i++) {
     // eslint-disable-next-line max-len
@@ -29,7 +22,6 @@ const flatten = function(arr) {
   }
   console.log(flattened);
   return flattened;
-
 };
 
 assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
