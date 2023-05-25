@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 const assertEqual = function(actual, expected) {
   const passed = `🍈🍈🍈 Assertion Passed: ${actual} === ${expected}`;
   const failed = `🎯🎯🎯 Assertion Failed: ${actual} !== ${expected}`;

@@ -6,7 +6,7 @@ const assertEqual = function(actual, expected) {
 
 const countLetter = function(string) {
   string = string.split(' ').join('');
-  let result = {};
+  const result = {};
   for (const l of string) {
     if (result[l]) {
       result[l] += 1;
@@ -18,7 +18,7 @@ const countLetter = function(string) {
 };
 
 
-const string = "lighthouse in the house";
+const string = 'lighthouse in the house';
 const obj = {
   l: 1,
   i: 2,
@@ -32,7 +32,7 @@ const obj = {
   n: 1,
 };
 
-let result = countLetter(string)
+const result = countLetter(string);
 assertEqual(result['g'], obj['g']);
 assertEqual(result['n'], obj['n']);
 assertEqual(result['h'], obj['h']);
