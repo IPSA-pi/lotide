@@ -25,4 +25,4 @@ const object = {
 };
 
 assertEqual(findKey(object, (x) => x.stars === 2), 'noma');
-
+assertEqual(findKey(object, (x) => x.stars === 3), 'Akaleri'); 
