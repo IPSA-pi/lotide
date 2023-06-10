@@ -54,3 +54,4 @@ const expected2 = {
 };
 
 assertArraysEqual(letterPositions(string2), expected2);
+module.exports = letterPositions;
