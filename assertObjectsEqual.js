@@ -1,14 +1,4 @@
 /* eslint-disable max-len */
-
-const eqArrays = function(arr1, arr2) {
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
 const eqObjects = function(object1, object2) {
   // Get each object's keys
   const object1Keys = Object.keys(object1);
@@ -33,18 +23,4 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-const assertObjectsEqual = function(obj1, obj2) {
-  const inspect = require('util').inspect;
-  const passed = `✅✅✅ Assertion Passed: ${inspect(obj1)} === ${inspect(obj2)}`;
-  const failed = `🛑🛑🛑 Assertion Failed: ${inspect(obj1)} !== ${inspect(obj2)}`;
-  eqObjects(obj1, obj2) ? console.log(passed) : console.log(failed);
-};
-
-const obj = {firstName: 'Ian', lastName: 'Sebelius'};
-const obj3 = {firstName: 'Ian', lastName: 'Sebelius'};
-const obj2 = {firstName: 'Paul', lastName: 'Ancira'};
-
-assertObjectsEqual(obj, obj); // true
-assertObjectsEqual(obj, obj3);// ture
-assertObjectsEqual(obj, obj2);// false
-assertObjectsEqual({}, {}); //   true
+module.exports = eqObjects;
