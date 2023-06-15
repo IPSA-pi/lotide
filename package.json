@@ -2,7 +2,7 @@
   "name": "@ipsa/lotide",
   "version": "1.0.0",
   "description": "This library is a mini-clone of the Lodash library, it was created within the web dev flex course at Lighthouse Labs",
-  "main": "assertEqual.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
