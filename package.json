@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
-  "version": "1.0.1",
-  "description": "",
+  "name": "@ipsa/lotide",
+  "version": "1.0.0",
+  "description": "This library is a mini-clone of the Lodash library, it was created within the web dev flex course at Lighthouse Labs",
   "main": "assertEqual.js",
   "scripts": {
     "test": "mocha"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/IPSA-pi/lotide.git"
   },
-  "author": "",
+  "author": "Ian Sebelius",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/IPSA-pi/lotide/issues"
